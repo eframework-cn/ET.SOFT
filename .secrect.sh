@@ -6,7 +6,7 @@ arr=(${url//// })
 len=${#arr[@]}
 repo=${arr[len-1]}
 
-key="~/.ssh/${repo}"
+key=~/.ssh/${repo}
 echo git-crypt: $key
 
 if [ -f $key ]; then
