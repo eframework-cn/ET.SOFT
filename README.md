@@ -2,10 +2,10 @@
 Developement tools.
 
 ## SOFTWARE
-- BC.3.3.12.exe: compare tools(free edition)
-- NPP.8.4.2.exe: notepad++
-- config: default ssh config
-- SetEnv.cmd: easy to setting u3d development env for windows
+- [BC.3.3.12.exe](https://eframework-cn.github.io/ET.SOFT/BC.3.3.12.exe): compare tool(free edition).
+- [NPP.8.4.2.exe](https://eframework-cn.github.io/ET.SOFT/NPP.8.4.2.exe): notepad++
+- [SetEnv.cmd](https://eframework-cn.github.io/ET.SOFT/SetEnv.cmd): easy to setting u3d development env for windows.
+- [SSH Config](https://eframework-cn.github.io/ET.SOFT/config): ssh config template.
 
 ## WARNING
 - For internal dev only, do not distribute it, please contact **admin@eframework.cn**/**new issue** delete.
