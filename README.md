@@ -27,5 +27,5 @@ Developement tools.
   - OSX：todo
 
 ## WARNING
-- For internal dev only, do not distribute it, please contact admin@eframework.cn/[new issue](https://github.com/eframework-cn/ET.SOFT/issues) to delete.
-- 仅供内部开发使用，请勿公开传播，若侵权请联系admin@eframework.cn/[新增议题](https://github.com/eframework-cn/ET.SOFT/issues)删除.
+- **内部开发使用，请勿公开传播**，若侵权请联系admin@eframework.cn或[新增议题](https://github.com/eframework-cn/ET.SOFT/issues)删除.
+- **FOR INTERNAL DEV ONLY, DO NOT DISTRIBUTE**, please contact admin@eframework.cn or [new issue](https://github.com/eframework-cn/ET.SOFT/issues) to delete.
