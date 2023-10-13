@@ -1,0 +1,51 @@
+#!/bin/sh
+
+## setup user
+email=""
+name=""
+
+remote="$([[ $(git remote | wc -l) -eq 1 ]] && git remote || git remote | grep "^origin$")"
+url="$(git config --local remote.${remote}.url)"
+
+arr=(${url//@/ })
+host=${arr[1]}
+arr=(${host//:/ })
+host=${arr[0]}
+
+sig=false
+while read line
+do
+  if [[ $sig == false ]]
+  then
+    if [[ $line =~ "Host $host" ]]
+    then
+      sig=true
+    fi
+  else
+    if [[ $line =~ "User " ]]
+    then
+      arr=(${line//User / })
+      name="$(echo ${arr[0]})"
+      email="${name}@${host}"
+      break
+    fi
+  fi
+done < ~/.ssh/config
+
+git config user.name $name
+echo "set repo ${url}'s user.name to ${name}"
+
+git config user.email ${email}
+echo "set repo ${url}'s user.email to ${email}"
+
+## do git-crypt
+root=$GIT_DIR
+root=${root/.git/}
+root=${root/modules/}
+if [ -f $root"/.secrect.sh" ]; then
+	if [ ! -d $GIT_DIR"/git-crypt" ]; then
+		$root"/.secrect.sh"
+	fi
+fi
+
+exit 0
