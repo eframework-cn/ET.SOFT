@@ -6,6 +6,7 @@ Developement tools.
 - [NPP.8.4.2.exe](https://eframework-cn.github.io/ET.SOFT/NPP.8.4.2.exe): notepad++
 - [SetEnv.cmd](https://eframework-cn.github.io/ET.SOFT/SetEnv.cmd): easy to setting u3d development env for windows.
 - [SSH Config](https://eframework-cn.github.io/ET.SOFT/config): ssh config template.
+- [git-crypt.exe](https://eframework-cn.github.io/ET.SOFT/git-crypt.exe): git crypt tool for windows.
 
 ## WARNING
 - For internal dev only, do not distribute it, please contact admin@eframework.cn/[new issue](https://github.com/eframework-cn/ET.SOFT/issues) to delete.
