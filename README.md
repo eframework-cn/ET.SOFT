@@ -17,8 +17,8 @@ Developement tools.
         PubkeyAcceptedAlgorithms +ssh-rsa #密钥类型
         ProxyCommand connect -S 127.0.0.1:10808 -a none %h %p # 代理服务，若仓库地址访问缓慢可使用
   ```
-- [git-crypt.exe](https://eframework-cn.github.io/ET.SOFT/git-crypt.exe): git crypt tool for windows.
-  - Windows：放置于C:/Windows/System32目录
+- git-crypt: git crypt tool for windows.
+  - [Windows](https://eframework-cn.github.io/ET.SOFT/git-crypt.exe)：放置于C:/Windows/System32目录
   - Linux：todo
   - OSX：todo
 - [post-checkout](https://eframework-cn.github.io/ET.SOFT/post-checkout): git hooks for post checkout.
