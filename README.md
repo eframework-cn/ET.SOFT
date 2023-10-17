@@ -14,8 +14,9 @@ Developement tools.
         User # 用户名称：提交时显示的名称（重要）
         IdentityFile # 密钥文件，如：~/.ssh/$User@github.key
         HostkeyAlgorithms +ssh-rsa # 密钥类型
-        PubkeyAcceptedAlgorithms +ssh-rsa #密钥类型
-        ProxyCommand connect -S 127.0.0.1:10808 -a none %h %p # 代理服务，若仓库地址访问缓慢可使用
+        PubkeyAcceptedAlgorithms +ssh-rsa # 密钥类型
+        # StrictHostKeyChecking no # 忽略密钥校验
+        # ProxyCommand connect -S 127.0.0.1:10808 -a none %h %p # 代理服务，若仓库地址访问缓慢可使用
   ```
 - git-crypt: git crypt tool for windows.
   - [Windows](https://eframework-cn.github.io/ET.SOFT/git-crypt.exe)：放置于C:/Windows/System32目录
