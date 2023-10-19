@@ -20,8 +20,9 @@ Developement tools.
   ```
 - git-crypt: git crypt tool for windows.
   - [Windows](https://eframework-cn.github.io/ET.SOFT/git-crypt.exe)：放置于C:/Windows/System32目录
-  - Linux：todo
+  - [Linux](https://eframework-cn.github.io/ET.SOFT/git-crypt.linux)：去除后缀名放置于系统目录并配置环境变量
   - OSX：todo
+  - [Action](https://eframework-cn.github.io/ET.SOFT/git-crypt.action)：用于CI/CD流程控制
 - [post-checkout](https://eframework-cn.github.io/ET.SOFT/post-checkout): git hooks for post checkout.
   - Windows：放置于C:/Program Files/Git/mingw64/share/git-core/templates/hooks目录（视git安装目录而定）
   - Linux：todo

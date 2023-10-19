@@ -1,10 +1,7 @@
 #!/bin/sh
 
 remote="$([[ $(git remote | wc -l) -eq 1 ]] && git remote || git remote | grep "^origin$")"
-url="$(git config --local remote.${remote}.url)"
-arr=(${url//// })
-len=${#arr[@]}
-repo=${arr[len-1]}
+repo="$(basename `git config --local remote.${remote}.url`)"
 
 key=~/.ssh/${repo}
 echo git-crypt: $key
