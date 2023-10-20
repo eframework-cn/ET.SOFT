@@ -53,18 +53,20 @@ if [[ $GIT_DIR =~ "/.git/modules" ]]; then
   lbranch="$(git rev-parse --abbrev-ref HEAD)"
   branch="master"
   sig=false
-  while read line; do
-    if [[ $sig == false ]]; then
-      if [[ $line =~ $repo ]]; then
-        sig=true
+  if [ -f $sroot"/.gitmodules" ]; then
+    while read line; do
+      if [[ $sig == false ]]; then
+        if [[ $line =~ $repo ]]; then
+          sig=true
+        fi
+      else
+        if [[ $line =~ "branch = " ]]; then
+          branch="$(echo ${line/branch = /})"
+          break
+        fi
       fi
-    else
-      if [[ $line =~ "branch = " ]]; then
-        branch="$(echo ${line/branch = /})"
-        break
-      fi
-    fi
-  done < $sroot"/.gitmodules"
+    done < $sroot"/.gitmodules"
+  fi
   if [[ $lbranch != $branch ]]; then
     echo "set repo ${repo}'s branch to ${branch}"
 	  git checkout $branch
